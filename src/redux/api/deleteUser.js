@@ -6,7 +6,7 @@ export const deleteUser = createAsyncThunk(
     'auth/deleteUser',
     async (userId, thunkAPI) => {
         try {
-            const response = await fetch(`${baseUrl}${userId}`,{
+            const response = await fetch(`${baseUrl}users/${userId}`,{
                 method: 'DELETE'
             });
 
